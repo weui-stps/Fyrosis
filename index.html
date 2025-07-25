@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fyrosis - Mobile Platformer</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
+    <script src="js/game.js"></script>
+    <style>
+        body { margin: 0; padding: 0; background: #000; overflow: hidden; }
+        canvas { display: block; margin: 0 auto; }
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            pointer-events: auto;
+        }
+        .btn {
+            background: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 24px;
+            color: white;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <div class="btn" id="left">⯇</div>
+        <div class="btn" id="right">⯈</div>
+        <div class="btn" id="jump">⬆</div>
+        <div class="btn" id="fire">🔥</div>
+    </div>
+</body>
+</html>
